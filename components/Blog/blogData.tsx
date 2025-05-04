@@ -3,7 +3,7 @@ import { Blog } from "@/types/blog";
 const BlogData: Blog[] = [
   {
     _id: 1,
-    mainImage: "/images/blog/1.jpg",
+    mainImage: "./images/blog/1.jpg",
     title: "By Cash",
     metadata:[
       "Pay by Cash at the ",
@@ -13,7 +13,7 @@ const BlogData: Blog[] = [
   },
   {
     _id: 2,
-    mainImage: "/images/blog/2.jpg",
+    mainImage: "./images/blog/2.jpg",
     title: "By Bank Transfer",
     metadata:
       [
@@ -25,7 +25,7 @@ const BlogData: Blog[] = [
   },
   {
     _id: 2,
-    mainImage: "/images/blog/3.jpg",
+    mainImage: "./images/blog/3.jpg",
     title: "By Online Payment",
     metadata:
       ["Pay using reliable online payment processor.",

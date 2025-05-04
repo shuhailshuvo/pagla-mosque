@@ -32,7 +32,7 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/blog/zakat.jpg"
+                    src="./images/blog/zakat.jpg"
                     alt="Zakat Calculator"
                     style={{margin:"auto"}}
                   />
@@ -67,7 +67,7 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/blog/qibla.jpg"
+                    src="./images/blog/qibla.jpg"
                     alt="Qibla Finder"
                     style={{margin:"auto"}}
                   />
@@ -100,7 +100,7 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/blog/quran.jpg"
+                    src="./images/blog/quran.jpg"
                     alt="Al-Quran"
                     style={{margin:"auto"}}
                   />
