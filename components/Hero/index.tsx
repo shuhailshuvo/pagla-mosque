@@ -37,13 +37,13 @@ const Hero = () => {
                 <div className=" relative aspect-700/444 w-full">
                   <Image
                     className="shadow-solid-l dark:hidden rounded-lg"
-                    src="/images/hero/hero-light.jpeg"
+                    src="./images/hero/hero-light.jpeg"
                     alt="Hero"
                     fill
                   />
                   <Image
                     className="hidden shadow-solid-l dark:block rounded-lg"
-                    src="/images/hero/hero-dark.jpg"
+                    src="./images/hero/hero-dark.jpg"
                     alt="Hero"
                     fill
                   />

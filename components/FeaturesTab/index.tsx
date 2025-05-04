@@ -13,7 +13,7 @@ const FeaturesTab = () => {
   return (
     <>
       {/* <!-- ===== Features Tab Start ===== --> */}
-      <section className="relative pb-60 pt-60 lg:pb-60" style={{backgroundImage: "url(/images/features/uc.jpg)", backgroundSize: "cover", backgroundPosition: "center"}}>
+      <section className="relative pb-60 pt-60 lg:pb-60" style={{backgroundImage: "url(./images/features/uc.jpg)", backgroundSize: "cover", backgroundPosition: "center"}}>
         <div style={{backgroundColor:"rgb(242, 216, 161)",width: "90%",height: "auto",padding: 20, textAlign: "center", margin: "0 auto", borderRadius: 10, marginBottom:10}}>
         “Whoever builds a mosque, desiring thereby Allah’s pleasure, Allah builds for him the like of it in paradise. ”<br/><br/>
             <em>~ Sahih Bukhari</em><br/><br/>
