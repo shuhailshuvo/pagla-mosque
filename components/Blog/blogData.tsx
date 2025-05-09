@@ -4,7 +4,7 @@ const BlogData: Blog[] = [
   {
     _id: 1,
     mainImage: "./images/blog/1.jpg",
-    title: "By Cash",
+    title: "cash",
     metadata:[
       "Pay by Cash at the ",
       "Pagla mosque and Islamic Complex",
@@ -14,7 +14,7 @@ const BlogData: Blog[] = [
   {
     _id: 2,
     mainImage: "./images/blog/2.jpg",
-    title: "By Bank Transfer",
+    title: "bank",
     metadata:
       [
       "Pagla Mosque and Islamic Complex",  
@@ -26,7 +26,7 @@ const BlogData: Blog[] = [
   {
     _id: 2,
     mainImage: "./images/blog/3.jpg",
-    title: "By Online Payment",
+    title: "online",
     metadata:
       ["Pay using reliable online payment processor.",
       "SSL Wireless (From Bangladesh)",

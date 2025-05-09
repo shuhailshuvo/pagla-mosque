@@ -3,10 +3,12 @@ import { Blog } from "@/types/blog";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const BlogItem = ({ blog }: { blog: Blog }) => {
+  const { t } = useTranslation();
   const { mainImage, title, metadata } = blog;
-
+  var i=-1;
   return (
     <>
       <motion.div
@@ -34,13 +36,16 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
         <div className="px-4">
           <h3 className="mb-3.5 mt-7.5 line-clamp-2 inline-block text-lg font-medium text-black duration-300 hover:text-primary dark:text-white dark:hover:text-primary xl:text-itemtitle2">
             <Link href={`#`}>
-              {`${title.slice(0, 40)}...`}
+              {`${t(title).slice(0, 40)}...`}
             </Link>
           </h3>
-         {metadata?.map(element => 
-             <p key={element} className="line-clamp-3">
-              {element}
-            </p>
+         {
+         metadata?.map(element => {
+          i++;
+          return(<p key={element} className="line-clamp-3">
+              {t(`${title}Text${i}`)}
+            </p>)
+         }
           )}
         </div>
       </motion.div>

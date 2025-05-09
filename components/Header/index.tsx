@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const moment = require('moment-hijri');
 
@@ -17,6 +19,7 @@ const Header = () => {
   const [arbDate, setArbDate] = useState("");
 
   const pathUrl = usePathname();
+  const { t } = useTranslation();
 
   // Sticky menu
   const handleStickyMenu = () => {
@@ -163,7 +166,7 @@ const Header = () => {
                       >
                         {menuItem.submenu.map((item, key) => (
                           <li key={key} className="hover:text-primary">
-                            <Link href={item.path || "#"}>{item.title}</Link>
+                            <Link href={item.path || "#"}>{t([item.title])}</Link>
                           </li>
                         ))}
                       </ul>
@@ -177,7 +180,7 @@ const Header = () => {
                           : "hover:text-primary"
                       }
                     >
-                      {menuItem.title}
+                      {t([menuItem.title])}
                     </Link>
                   )}
                 </li>
@@ -192,11 +195,12 @@ const Header = () => {
              {engDate} | {arbDate}
             </div>
             <ThemeToggler />
+            <LanguageSwitcher />
             <Link
               href="#donate"
               className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
             >
-              Donate
+              {t("donate")}
             </Link>
           </div>
         </div>

@@ -1,9 +1,13 @@
+"use client";
+
 import React from "react";
+import { useTranslation } from "react-i18next";
 import SectionHeader from "../Common/SectionHeader";
 import BlogItem from "./BlogItem";
 import BlogData from "./blogData";
 
-const Blog = async () => {
+const Blog = () => {
+  const { t } = useTranslation();
   return (
     <section id="donate" className="py-20 lg:py-25 xl:py-30">
       <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
@@ -11,9 +15,9 @@ const Blog = async () => {
         <div className="animate_top mx-auto text-center">
           <SectionHeader
             headerInfo={{
-              title: `Send your Donation`,
+              title: t("donation"),
               subtitle: ``,
-              description: `Send your donation to the Pagla Mosque and Islamic Complex. Your support is crucial in maintaining the mosque and its activities. Thank you for your generosity.`,
+              description: t("donationText"),
             }}
           />
         </div>

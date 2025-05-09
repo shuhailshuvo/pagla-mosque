@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <>
       <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
@@ -41,7 +43,7 @@ const Footer = () => {
                 
 
                 <p className="mb-10 mt-5" style={{textAlign:"center"}}>
-                  Calculate your Zakat and make a difference in the lives of those in need.
+                  {t("zakat")}
                 </p>
               </motion.div>
 
@@ -74,7 +76,7 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5" style={{textAlign:"center"}}>
-                  Find the Qibla direction from anywhere in the world with Qibla Finder.
+                   {t("qibla")}
                 </p>
               </motion.div>
 
@@ -109,7 +111,7 @@ const Footer = () => {
                 
 
                 <p className="mb-10 mt-5" style={{textAlign:"center"}}>
-                  Reciting holy Quran is a source of guidance and blessings. Read and reflect on its verses.
+                   {t("quran")}
                 </p>
               </motion.div>
 

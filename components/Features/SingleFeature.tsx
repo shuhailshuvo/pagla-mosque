@@ -3,9 +3,11 @@ import Link from "next/link";
 import { Feature } from "@/types/feature";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { id, icon, title, description } = feature;
+  const { t } = useTranslation();
 
   return (
     <>
@@ -31,10 +33,10 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           <Image src={icon} width={36} height={36} alt="title" />
         </div>
         <h3 className="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
-          {title}
+          {t(title)}
         </h3>
-        <p>{description}</p>
-        {id === 3 &&
+        <p>{t(description)}</p>
+        {/* {id === 3 &&
         // show donate now button
         <Link
               href="#donate"
@@ -43,7 +45,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
             >
               Donate Now
             </Link>
-        }
+        } */}
 
       </motion.div>
     </>

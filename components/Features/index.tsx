@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import featuresData from "./featuresData";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
 
 const Feature = () => {
+  const { t } = useTranslation();
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}
@@ -13,10 +15,9 @@ const Feature = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "About Pagla Mosque",
+              title: t("aboutMosque"),
               subtitle: "",
-              description: `Pagla Mosque, located in Harua, Kishoreganj, Bangladesh, is a renowned Islamic site known for its rich history, spiritual significance, and remarkable charitable contributions`,
-            }}
+              description: t("aboutText")}}
           />
           {/* <!-- Section Title End --> */}
 

@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
   const [email, setEmail] = useState("");
+  const { t } = useTranslation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,19 +18,12 @@ const Hero = () => {
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                Pagla Mosque
+                {t("title")}
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-              The Pagla Mosque and Islamic Complex
+              {t("officialName")}
               </h1>
-              <p>
-              The Pagla Mosque, officially the Pagla Mosque and Islamic Complex, is an old mosque in located 
-              on the banks of the Narsunda River in Harua, in the Kishoreganj District of the Dhaka Division in Bangladesh.<br/><br/>
-              According to a legend, a spiritual personality named Dewan Zil Kadar Khan alias Zil Kadar Pagla Sahib, a descendant 
-              of Isa Khan of the Haibatnagar Zamindar family in the region, used to pray on the banks of the Narsunda River. 
-              Later, a mosque was built at the site. The mosque came to be known as the Pagla Mosque after Zil Kadar Pagla. 
-              According to another legend, the mosque was named after the Pagla Bibi of the then Haibatnagar Zamindar family of Kishoreganj.
-              </p>
+              <p>{t("intro")}<br/><br/>{t("details")}</p>
             </div>
 
             <div className="animate_right hidden md:w-1/2 lg:block">

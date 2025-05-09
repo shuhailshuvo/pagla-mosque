@@ -1,5 +1,6 @@
 "use client";
 
+import '@/i18n';
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Lines from "@/components/Lines";
