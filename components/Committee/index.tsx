@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const Committee = () => {
   const { t } = useTranslation();
-  const data = t("committeeMember", { returnObjects: true })
+  const data = t("committeeMember", { returnObjects: true }) as [number, string, string][];
 
   return (
     <>
