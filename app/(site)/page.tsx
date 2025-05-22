@@ -4,6 +4,8 @@ import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
 import About from "@/components/About";
+import Committee from "@/components/Committee";
+import Madrasa from "@/components/Madrasa";
 import FeaturesTab from "@/components/FeaturesTab";
 import FunFact from "@/components/FunFact";
 import Integration from "@/components/Integration";
@@ -28,13 +30,9 @@ export default function Home() {
       <Brands />
       <Feature />
       <About />
+      <Committee />
+      <Madrasa />
       <FeaturesTab />
-      {/* <FunFact /> */}
-      {/* <Integration /> */}
-      {/* <CTA /> */}
-      {/* <FAQ /> */}
-      {/* <Testimonial /> */}
-      {/* <Pricing /> */}
       <Blog />
       <Contact />
     </main>

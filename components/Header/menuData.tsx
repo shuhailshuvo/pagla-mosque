@@ -14,22 +14,28 @@ const menuData: Menu[] = [
     path: "/#about",
   },
   {
-    id: 2,
+    id: 3,
     title: "location",
     newTab: false,
     path: "/#map",
   },
-  // {
-  //   id: 3,
-  //   title: "Photos",
-  //   newTab: false,
-  //   path: "/blog",
-  // },
   {
     id: 4,
+    title: "committee",
+    newTab: false,
+    path: "/#committee",
+  },
+  {
+    id: 5,
+    title: "madrasa",
+    newTab: false,
+    path: "/#madrasa",
+  },
+  {
+    id: 6,
     title: "contact",
     newTab: false,
-    path: "#contact",
+    path: "/#contact",
   },
   // {
   //   id: 3,
